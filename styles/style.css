@@ -17,4 +17,7 @@ header h2 {
     color: rgba(0, 0, 255, 0.545);
     text-indent: 30px;
 }
+header img {
+    float: left;
+}
 h1 {color:rgba(0, 0, 255, 0.545); font-size: 50px;}
