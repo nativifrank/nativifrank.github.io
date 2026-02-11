@@ -60,10 +60,6 @@ main h3 {
   line-height: 1.5em;
 }
 
-footer p.copyright {
-  text-align: center;
-  font-size: 80%;
-}
 main h3{
     margin: 1.5em 2em 1.5em;
     border: 5px dashed blue;
@@ -84,4 +80,8 @@ main div.contact {
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px red;
     padding: 1em;
+}
+footer p.copyright {
+  text-align: center;
+  font-size: 80%;
 }
