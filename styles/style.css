@@ -2,6 +2,7 @@ html {
   background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
 }
 body {
+  background-image: url("images/downloadedweb.png");
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
   width: 1000px;
@@ -11,7 +12,6 @@ body {
   border: 1px solid black;
   border-radius: 25px;
   box-shadow: 5px 5px 0 0;
-  background-image: url("images/downloadedweb.png");
   background-position: right;
   background-repeat: repeat-y;
   background-attachment: fixed;
