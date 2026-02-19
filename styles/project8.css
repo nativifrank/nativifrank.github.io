@@ -43,8 +43,6 @@ header img {
   float: left;
   margin-left: 2em;
   margin-right: 1em;
-  clear: both;
-  border-top: 2px solid maroon;
 }
 
 .shadow {
