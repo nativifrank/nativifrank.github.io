@@ -22,3 +22,10 @@
 #nav_menu ul li a.current { 
     color: yellow; 
 }
+#nav_menu {
+  overflow: auto;     
+}
+
+article {
+  clear: both;        
+}
