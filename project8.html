@@ -35,5 +35,30 @@
         <p>&copy; Frank Nativi</p>
     </footer>
     <p class=""></p>
+    <script>
+  const API_BASE = "https://api.franknati.com";
+
+  document.getElementById("btn").addEventListener("click", async () => {
+    const out = document.getElementById("out");
+    out.textContent = "Calling API...";
+
+    try {
+      const res = await fetch(`${API_BASE}/api/health`, { cache: "no-store" });
+
+      if (!res.ok) {
+        const text = await res.text();
+        throw new Error(`HTTP ${res.status}: ${text}`);
+      }
+
+      const data = await res.json();
+      out.textContent = JSON.stringify(data, null, 2);
+    } catch (err) {
+      out.textContent =
+        "Request failed.\n\n" +
+        err +
+        "\n\nCommon causes:\n- API url is http (mixed content)\n- CORS not allowed for your GitHub Pages origin\n- API not reachable publicly";
+    }
+  });
+</script>
 </body>
 </html>
