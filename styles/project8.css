@@ -79,7 +79,14 @@ aside {
     
 }
 p.fixed {
-    
+    width: auto;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 h4 {
   text-align: center;
