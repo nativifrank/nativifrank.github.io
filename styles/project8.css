@@ -81,7 +81,7 @@ aside {
 p.fixed {
     position: fixed;
     bottom: 100px;
-    right: calc((100% - 90%) / 2 + 15px);
+    right: calc((100% - 90%) / 2);
     width: 20%;
     background-color: lightgreen;
     border: 2px solid darkgreen;
