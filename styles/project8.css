@@ -79,14 +79,15 @@ aside {
     
 }
 p.fixed {
-    width: auto;
     position: fixed;
     bottom: 100px;
-    right: 20px;
+    right: calc((100% - 90%) / 2 + 15px);
+    width: 20%;
     background-color: lightgreen;
     border: 2px solid darkgreen;
     padding: 10px 20px;
     font-weight: bold;
+    box-sizing: border-box;
 }
 h4 {
   text-align: center;
