@@ -75,7 +75,8 @@ article p::first-letter {
 aside {
     width: 20%;
     float: right;
-    background-color: rgba(173, 216, 230, 0.7)
+    background-color: rgba(173, 216, 230, 0.7);
+    margin-top: 0;
     
 }
 p.fixed {
