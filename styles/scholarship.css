@@ -80,13 +80,6 @@ article p {
   line-height: 1.6;
 }
 
-article p:first-of-type::first-letter{
-  font-size: 3em;
-  font-weight: bold;
-  font-style: italic;
-  color: maroon;
-}
-
 aside {
   width: 20%;
   float: right;
