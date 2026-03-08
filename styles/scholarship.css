@@ -80,7 +80,7 @@ article p {
   line-height: 1.6;
 }
 
-article p::first-letter {
+article p:first-of-type::first-letterr{
   font-size: 3em;
   font-weight: bold;
   font-style: italic;
