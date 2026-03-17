@@ -25,6 +25,12 @@
 #nav_menu {
   overflow: auto;     
 }
+aside ul {
+    list-style-type: square;
+}
+aside ol {
+    list-style-type: upper-roman;
+}
 
 article {
   clear: both;        
