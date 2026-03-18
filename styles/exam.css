@@ -163,17 +163,3 @@ footer p {
     text-align: center;
     font-size: 80%;
 }
-
-@media screen and (max-width: 1200px) {
-    article {
-        width: 100%;
-        column-count: 1;
-        column-rule: none;
-    }
-
-    aside {
-        position: static;
-        width: 100%;
-        margin-top: 1.5em;
-    }
-}
