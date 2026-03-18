@@ -30,7 +30,6 @@ main {
     overflow: hidden;
 }
 
-/* NAVIGATION */
 #nav_menu {
     overflow: auto;
     margin-bottom: 1em;
@@ -68,7 +67,6 @@ main {
     color: yellow;
 }
 
-/* ARTICLE */
 article {
     width: 75%;
     box-sizing: border-box;
@@ -117,7 +115,6 @@ article p::first-letter {
     border: 2px solid black;
 }
 
-/* ASIDE */
 aside {
     width: 20%;
     position: fixed;
@@ -155,7 +152,6 @@ aside a {
     color: blue;
 }
 
-/* FOOTER */
 footer {
     clear: both;
     margin-top: 2em;
@@ -168,7 +164,6 @@ footer p {
     font-size: 80%;
 }
 
-/* RESPONSIVE FALLBACK */
 @media screen and (max-width: 1200px) {
     article {
         width: 100%;
