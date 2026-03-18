@@ -72,7 +72,7 @@ article {
     box-sizing: border-box;
     column-count: 3;
     column-gap: 28px;
-    column-rule: 4px dotted blue;
+    column-rule: 4px dashed blue;
 }
 
 article h1 {
