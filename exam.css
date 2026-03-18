@@ -34,7 +34,6 @@ body {
 
 #nav_menu ul li {
     float: left;
-    margin-right: 0;
 }
 
 #nav_menu ul li a {
@@ -58,35 +57,38 @@ body {
 }
 
 main {
-    overflow: auto;
-    position: relative;
+    overflow: hidden;
 }
 
 article {
     width: 75%;
-    padding-right: 2%;
-    column-count: 3;
-    column-gap: 30px;
-    column-rule: 4px solid #1f39ff;
     box-sizing: border-box;
-}
-
-article h1,
-article h2 {
-    column-span: all;
-    color: #1f39ff;
-    margin-top: 0.8em;
-    margin-bottom: 0.5em;
-    break-after: avoid;
+    column-count: 3;
+    column-gap: 28px;
+    column-rule: 4px dotted #1f39ff;
 }
 
 article h1 {
+    color: #1f39ff;
     font-size: 2em;
     margin-top: 0.2em;
+    margin-bottom: 0.7em;
+    break-after: avoid;
 }
 
 article h2 {
+    color: #1f39ff;
     font-size: 1.35em;
+    margin-top: 0.8em;
+    margin-bottom: 0.45em;
+    break-after: avoid;
+}
+
+article h2,
+article p,
+article img,
+article a {
+    break-inside: avoid;
 }
 
 article p {
@@ -170,7 +172,8 @@ footer a {
 @media screen and (max-width: 1200px) {
     article {
         width: 100%;
-        padding-right: 0;
+        column-count: 1;
+        column-rule: none;
     }
 
     aside {
