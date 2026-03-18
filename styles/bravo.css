@@ -127,3 +127,73 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
+/* Start Here Page */
+
+.start-section {
+
+max-width: 800px;
+margin: auto;
+padding: 40px 20px;
+
+}
+
+.enrollment-form {
+
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+
+}
+
+.enrollment-form label {
+
+margin-top: 15px;
+font-weight: bold;
+
+}
+
+.enrollment-form input,
+.enrollment-form select,
+.enrollment-form textarea {
+
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+
+}
+
+.checkbox-group {
+
+display: flex;
+flex-direction: column;
+margin-top: 10px;
+
+}
+
+.checkbox-group label {
+
+font-weight: normal;
+margin-top: 5px;
+
+}
+
+.enrollment-form button {
+
+margin-top: 20px;
+padding: 12px;
+border: none;
+background-color: #0a2540;
+color: white;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+
+}
+
+.enrollment-form button:hover {
+
+background-color: #163c66;
+
+}
