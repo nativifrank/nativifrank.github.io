@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <header class="page-header">
+    <h1>My Certifications</h1>
+    <p>Professional certifications and current progress.</p>
+    <a class="back-link" href="index.html">← Back to Home</a>
+  </header>
 
-    <header>
-        <h1>My Certifications</h1>
-        <p>Professional certifications and current progress.</p>
-        <nav>
-            <a href="index.html">Back to Home</a>
-        </nav>
-    </header>
+  <main class="certifications-page">
+    <section class="cert-card">
+      <div class="cert-top">
+        <h2>CompTIA Security+</h2>
+        <span class="status completed">Completed</span>
+      </div>
+      <p class="cert-description">
+        Industry certification focused on core cybersecurity concepts, risk management, threats, and defense.
+      </p>
+      <div class="cert-links">
+        <a class="btn btn-view" href="files/CompTIA Security+ ce certificate.pdf" target="_blank">View Certificate</a>
+        <a class="btn btn-download" href="files/CompTIA Security+ ce certificate.pdf" download>Download Certificate</a>
+      </div>
+    </section>
 
-    <main class="certifications-page">
+    <section class="cert-card">
+      <div class="cert-top">
+        <h2>HTML and CSS Certification</h2>
+        <span class="status completed">Completed</span>
+      </div>
+      <p class="cert-description">
+        Certification covering front-end fundamentals including semantic HTML, styling, layout, and responsive design.
+      </p>
+      <div class="cert-links">
+        <a class="btn btn-view" href="files/cert HTML CSS.pdf" target="_blank">View Certificate</a>
+        <a class="btn btn-download" href="files/cert HTML CSS.pdf" download>Download Certificate</a>
+      </div>
+    </section>
 
-        <section class="cert-card">
-            <h2>CompTIA Security+</h2>
-            <p>Status: Completed</p>
-            <div class="cert-links">
-                <a href="files/CompTIA Security+ ce certificate.pdf" target="_blank">View Certificate</a>
-                <a href="files/CompTIA Security+ ce certificate.pdf" download>Download Certificate</a>
-            </div>
-        </section>
-
-        <section class="cert-card">
-            <h2>HTML and CSS Certification</h2>
-            <p>Status: Completed</p>
-            <div class="cert-links">
-                <a href="files/cert HTML CSS.pdf" target="_blank">View Certificate</a>
-                <a href="files/cert HTML CSS.pdf" download>Download Certificate</a>
-            </div>
-        </section>
-
-        <section class="cert-card">
-            <h2>Microsoft Azure AZ-900</h2>
-            <p>Status: In Progress</p>
-            <p>I am currently preparing for and working toward this certification.</p>
-        </section>
-
-    </main>
-
+    <section class="cert-card">
+      <div class="cert-top">
+        <h2>Microsoft Azure AZ-900</h2>
+        <span class="status progress">In Progress</span>
+      </div>
+      <p class="cert-description">
+        Currently preparing for the Microsoft Azure Fundamentals certification to strengthen cloud knowledge and platform skills.
+      </p>
+    </section>
+  </main>
 </body>
 </html>

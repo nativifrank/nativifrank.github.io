@@ -1,0 +1,163 @@
+html {
+  background: linear-gradient(to bottom, #d4f0fc 0%, #02577a 100%);
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 85%;
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 2px solid #111;
+  border-radius: 24px;
+  box-shadow: 8px 8px 0 #000;
+  color: #111;
+}
+
+/* General links */
+a {
+  color: #02577a;
+}
+
+a:hover,
+a:focus {
+  color: orangered;
+}
+
+/* Header */
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+  color: #02577a;
+}
+
+.page-header p {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus {
+  text-decoration: underline;
+}
+
+/* Main content */
+.certifications-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Certification cards */
+.cert-card {
+  background: #f8fbfd;
+  border: 2px solid #d6eaf2;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cert-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cert-card h2 {
+  margin: 0;
+  color: #02577a;
+  font-size: 1.7rem;
+}
+
+.cert-description {
+  margin: 0.9rem 0 1.2rem 0;
+  line-height: 1.6;
+}
+
+/* Status badges */
+.status {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.status.completed {
+  background-color: #dff5e3;
+  color: #18794e;
+}
+
+.status.progress {
+  background-color: #fff1cc;
+  color: #9a6700;
+}
+
+/* Buttons */
+.cert-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: translateY(-2px);
+  opacity: 0.92;
+  text-decoration: none;
+}
+
+.btn-view {
+  background-color: #02577a;
+  color: #fff;
+}
+
+.btn-download {
+  background-color: #f97316;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  body {
+    width: 92%;
+    padding: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .cert-card h2 {
+    font-size: 1.35rem;
+  }
+
+  .cert-top {
+    align-items: flex-start;
+  }
+}
