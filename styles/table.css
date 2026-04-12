@@ -90,7 +90,6 @@ table.third tbody tr:last-child {
     border-bottom: 2px solid orangered;
 }
 
-/*-----------------------------------------------------------*/
 footer {
     border-top: 2px solid #f46b45;
     text-align: center;
@@ -100,7 +99,6 @@ footer {
     color: #555;
 }
 
-/*-----------------------------------------------------------*/
 @media only screen and (max-width: 425px) {
     th, td {
         display: block;
