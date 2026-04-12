@@ -51,6 +51,7 @@ table.third {
     border-collapse: collapse;
     margin-top: 1em;
     min-width: 290px;
+    border-bottom: 2px solid orangered;
 }
 
 table.third th,
