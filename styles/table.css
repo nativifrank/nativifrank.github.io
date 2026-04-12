@@ -100,10 +100,12 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
-th, td {
+  th, td {
     display: block;
-}
+  }
 
-thead, td.number {
+  thead, td.number {
     display: none;
+    padding: 0;
+  }
 }
