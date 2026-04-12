@@ -100,37 +100,10 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
-  th, td {
+th, td {
     display: block;
-  }
+}
 
-  thead, td.number {
+thead, td.number {
     display: none;
-    padding: 0;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  tr {
-    display: block;
-    margin-bottom: 0.8em;
-  }
-
-  td {
-    border: none;
-    padding: 0.3em 0;
-  }
-
-  table.first,
-  table.second,
-  table.third {
-    border: none;
-  }
-
-  table.third tbody tr:last-child {
-    border-bottom: 3px solid orangered;
-    padding-bottom: 0.5em;
-  }
 }
