@@ -10,7 +10,6 @@ html, body {
   box-sizing: border-box;
 }
 
-/*---------------------------------------------------------------*/
 .top-nav {
   display: flex;
   flex-direction: row;
