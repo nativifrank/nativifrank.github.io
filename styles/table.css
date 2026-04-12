@@ -43,33 +43,48 @@ table.second thead tr:first-child {
 
 table.third {
     border-collapse: collapse;
-    width: 100%;
+    margin-top: 1em;
+    min-width: 290px;
 }
 
-table.third th, table.third td {
-    border: 2px solid orangered;
-    padding: 0.7em;
+table.third th,
+table.third td {
+    padding: 0.5em 0.7em;
+    text-align: left;
 }
 
 table.third thead tr:first-child {
-    border-top: 2px solid orangered;
-    text-align: center;
-    font-weight: bold;
-}
-
-table.third thead tr:nth-child(2) {
-    background-color: lightgray;
-}
-
-table.third td.number {
-    vertical-align: top;
-    font-weight: bold;
-}
-
-table.third tr:last-child {
+    border-top: 3px solid orangered;
     border-bottom: 2px solid orangered;
 }
 
+table.third thead tr:first-child th {
+    background-color: lightgreen;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+table.third thead tr:nth-child(2) {
+    border-bottom: 2px solid orangered;
+}
+
+table.third thead tr:nth-child(2) th {
+    background-color: lightgreen;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+table.third tbody td.number {
+    vertical-align: top;
+    width: 80px;
+}
+
+table.third tbody tr:last-child {
+    border-bottom: 3px solid orangered;
+}
 @media only screen and (max-width: 425px) {
     th, td {
         display: block;
