@@ -85,6 +85,10 @@ table.third tbody td.number {
 table.third tbody tr:last-child {
     border-bottom: 3px solid orangered;
 }
+
+body {
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 425px) {
     th, td {
         display: block;
