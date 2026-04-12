@@ -87,10 +87,6 @@ table.third tbody td.number {
     width: 80px;
 }
 
-table.third tbody tr:last-child {
-    border-bottom: 2px solid orangered;
-}
-
 footer {
   text-align: center;
   font-size: 0.8em;
