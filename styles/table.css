@@ -100,15 +100,31 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
-    table.third th,
-    table.third td {
+    table, thead, tbody, tr, th, td {
         display: block;
         width: 100%;
     }
 
-    table.third thead,
-    table.third td.number {
+    thead {
         display: none;
-        padding: 0;
+    }
+
+    td {
+        padding: 0.4em 0;
+        border: none;
+    }
+
+    tr {
+        margin-bottom: 1em;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 0.5em;
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+
+    td.number {
+        display: none;
     }
 }
