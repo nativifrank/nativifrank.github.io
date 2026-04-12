@@ -121,5 +121,8 @@ footer {
     table.third thead tr:nth-child(2) th {
         font-size: 0.9em;
     }
+    table.third {
+        width: 100%;
+    }
 
 }
