@@ -104,41 +104,11 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
-    html, body {
-        margin: 0.5em;
+    th, td {
+        display: block;
     }
-
-    table.first,
-    table.second,
-    table.third {
-        width: 100%;
-        max-width: 100%;
-        font-size: 0.85em;
-    }
-
-    table.first th,
-    table.first td,
-    table.second th,
-    table.second td,
-    table.third th,
-    table.third td {
-        padding: 0.35em 0.45em;
-    }
-
-    table.third thead tr:first-child th {
-        font-size: 1em;
-    }
-
-    table.third thead tr:nth-child(2) th {
-        font-size: 0.9em;
-    }
-
-    table.third tbody td.number {
-        width: 50px;
-    }
-
-    footer {
-        font-size: 0.7em;
-        padding: 8px 0 16px 0;
-    }
+    thead, td.number {
+        display: none;
+        padding: 0;
+    }    
 }
