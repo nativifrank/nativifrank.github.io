@@ -100,11 +100,13 @@ html, body {
   color: white;
 }
 
-.menu a:hover,
-a.current {
+.menu a:hover {
   text-decoration: underline;
 }
 
+a.current {
+  text-decoration: none;
+}
 article {
   padding: 0 18px;
 }
