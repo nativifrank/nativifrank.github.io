@@ -1,60 +1,822 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles/project8.html">
-    <link rel="stylesheet" href="styles/project8.css">
+
+    <meta name="description"
+        content="Technical projects by Frank Nativi involving Raspberry Pi, Linux, Flask APIs, Cloudflare, cybersecurity, networking, databases, Python, and web development.">
+
+    <meta name="keywords"
+        content="Frank Nativi, Projects, Raspberry Pi, Flask, Linux, Cloudflare, Grafana, Prometheus, Python, SQL, Cybersecurity, GitHub">
+
+    <title>Projects | Frank Nativi</title>
+
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
+
 <body>
-    <header>
-        <img src="images/fish.jpeg" alt="Frank's picture" height="85">
-        <h1 class="shadow">Welcome to my website!</h1>
-        <h2 class="shadow">https://nativifrank.github.io/index.html</h2>
-    </header>  
-    <article>
-        <h3>MGIS 3320: Website development project</h3>
-        <img src="images/fish.jpeg" alt="fishing images" height="100">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam itaque voluptatibus eum, est doloremque accusamus quaerat, commodi necessitatibus tempore sed, nam ex rem architecto temporibus porro quos neque nesciunt incidunt soluta adipisci iure eos. Earum alias vero sunt, tenetur porro quis harum iure voluptatibus, mollitia nulla, dolore sint eligendi ea tempora. Possimus in velit nobis officia. Laboriosam, iusto aliquam rerum, quis eum repellat corporis dolore iste vero blanditiis modi id debitis quibusdam delectus illo culpa? Fuga facere dolorem a impedit, fugiat assumenda neque veniam consequuntur eveniet animi numquam maiores, exercitationem natus nemo in corporis incidunt, commodi quasi quos? Voluptas quibusdam quod placeat incidunt laudantium fugit est, ducimus ipsa facere officiis ea voluptatum repudiandae? Repellat ut asperiores expedita culpa blanditiis nam laudantium a adipisci aut quibusdam eos, mollitia optio corporis hic quasi sed vitae non officia eius dolorum debitis ex assumenda doloremque! Necessitatibus totam minus assumenda fuga incidunt pariatur itaque soluta quos illo fugit accusamus magnam nihil nostrum modi odit ipsam doloremque sed at error sint, voluptatem ut eius! Tempora unde rem delectus pariatur aspernatur, ullam eum optio officiis at ut corporis eaque aliquid tempore illo id provident voluptas voluptate fugiat. Exercitationem dolorum suscipit consectetur rem veritatis. Architecto, quod iusto.</p>
-    </article>
-    <aside>
-        <h4>References</h4>
-        <ol>
-            <li><a href="https://www.w3schools.com/html/">W3schools</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla</a></li>
-            <li><a href="https://learn.microsoft.com/en-us/cpp/mfc/html-basics?view=msvc-170">Microsoft</a></li>
-            <li>
-                <button id="btn">Check backend status</button>
-                <pre id="out">Click the button…</pre>
-            </li>
-        </ol>
-        <a href="index.html">Return to Home page</a>
-    </aside>
-    <footer>
-        <p>&copy; Frank Nativi</p>
-    </footer>
-    <p class="fixed">Contact me at fxn013@shsu.edu</p>
+
+    <div class="page-container">
+
+
+        <!-- ==============================
+             HEADER
+        =============================== -->
+
+        <header>
+
+            <div class="header-text">
+
+                <h1>Technical Projects</h1>
+
+                <h2>
+                    Building, Testing & Learning Through Experience
+                </h2>
+
+                <p>
+                    A collection of projects involving Linux,
+                    networking, cloud technologies, programming,
+                    cybersecurity, databases, and systems analysis.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==============================
+             MAIN CONTENT
+        =============================== -->
+
+        <main>
+
+
+            <!-- ==============================
+                 INTRODUCTION
+            =============================== -->
+
+            <section class="intro">
+
+                <h2>Hands-On Technical Development</h2>
+
+                <p>
+                    I use personal, academic, and homelab projects
+                    to apply concepts that I learn in Management
+                    Information Systems, cybersecurity, networking,
+                    programming, and systems administration.
+                </p>
+
+                <p>
+                    These projects allow me to work with real
+                    technologies while gaining experience
+                    troubleshooting systems, configuring services,
+                    writing code, managing networks, and solving
+                    technical problems.
+                </p>
+
+            </section>
+
+
+            <!-- ==============================
+                 RASPBERRY PI PROJECT
+            =============================== -->
+
+            <section class="intro">
+
+                <h2>Raspberry Pi Linux Server & Flask API</h2>
+
+                <p>
+                    I configured a Raspberry Pi running Linux to host
+                    services within my personal homelab environment.
+                </p>
+
+                <p>
+                    One of those services is a Python Flask API that
+                    allows this website to communicate with my
+                    Raspberry Pi over the internet.
+                </p>
+
+                <p>
+                    The Flask application runs as a Linux system
+                    service and contains an API health endpoint
+                    that reports whether the backend server is
+                    currently reachable.
+                </p>
+
+
+                <!-- BACKEND STATUS CHECK -->
+
+                <div class="contact">
+
+                    <h2>Live Raspberry Pi Backend</h2>
+
+                    <p>
+                        This button sends a request from this website
+                        to my Flask API running on my Raspberry Pi.
+                    </p>
+
+                    <div class="contact-buttons">
+
+                        <button
+                            id="btn"
+                            class="button"
+                            type="button">
+
+                            Check Backend Status
+
+                        </button>
+
+                    </div>
+
+                    <p id="out">
+                        Click the button to check the server.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==============================
+                 INFRASTRUCTURE PROJECTS
+            =============================== -->
+
+            <section class="navigation-section">
+
+                <h2>Infrastructure & Networking Projects</h2>
+
+
+                <ul class="portfolio-grid">
+
+
+                    <!-- CLOUDFLARE -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Cloudflare Tunnel
+                            </span>
+
+                            <span class="nav-description">
+
+                                Configured Cloudflare Tunnel to securely
+                                expose services from my home network
+                                without directly opening inbound router
+                                ports.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- DNS -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                DNS & Subdomains
+                            </span>
+
+                            <span class="nav-description">
+
+                                Configured DNS records and subdomains
+                                using my franknati.com domain,
+                                including API and remote access services.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SSH -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Secure Remote Access
+                            </span>
+
+                            <span class="nav-description">
+
+                                Configured SSH and Cloudflare services
+                                to securely access Linux systems within
+                                my homelab environment.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SYSTEMD -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Linux Services
+                            </span>
+
+                            <span class="nav-description">
+
+                                Configured applications such as Flask
+                                and Cloudflare Tunnel to run as Linux
+                                systemd services and automatically start
+                                when the system boots.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- API -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                REST API Integration
+                            </span>
+
+                            <span class="nav-description">
+
+                                Created a Flask API endpoint and
+                                connected my GitHub Pages website
+                                to the backend using JavaScript Fetch.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- CORS -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                CORS Configuration
+                            </span>
+
+                            <span class="nav-description">
+
+                                Configured Cross-Origin Resource Sharing
+                                to allow requests from my GitHub Pages
+                                website while limiting unnecessary access.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </section>
+
+
+            <!-- ==============================
+                 MONITORING PROJECTS
+            =============================== -->
+
+            <section class="navigation-section">
+
+                <h2>Monitoring & Observability</h2>
+
+
+                <ul class="portfolio-grid">
+
+
+                    <!-- PROMETHEUS -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Prometheus
+                            </span>
+
+                            <span class="nav-description">
+
+                                Configured Prometheus to collect
+                                system performance metrics from
+                                devices within my homelab.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- GRAFANA -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Grafana
+                            </span>
+
+                            <span class="nav-description">
+
+                                Built monitoring dashboards to visualize
+                                CPU, memory, disk, uptime, and other
+                                infrastructure performance information.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NODE EXPORTER -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Node Exporter
+                            </span>
+
+                            <span class="nav-description">
+
+                                Configured Node Exporter to expose
+                                Linux system metrics that could be
+                                collected by Prometheus and displayed
+                                through Grafana.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </section>
+
+
+            <!-- ==============================
+                 WEB PROJECTS
+            =============================== -->
+
+            <section class="navigation-section">
+
+                <h2>Web Development Projects</h2>
+
+
+                <ul class="portfolio-grid">
+
+
+                    <!-- PERSONAL WEBSITE -->
+
+                    <li>
+
+                        <a href="index.html">
+
+                            <span class="nav-title">
+                                Personal Portfolio Website
+                            </span>
+
+                            <span class="nav-description">
+
+                                Designed and developed this responsive
+                                portfolio using HTML and CSS and deployed
+                                it using GitHub Pages.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- VETERAN WEBSITE -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Veteran Enrollment Website
+                            </span>
+
+                            <span class="nav-description">
+
+                                Developed a university project designed
+                                to help veterans, active-duty service
+                                members, and military dependents navigate
+                                SHSU enrollment and education benefits.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- CHATBOT -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                AI Student Support Chatbot
+                            </span>
+
+                            <span class="nav-description">
+
+                                Integrated an AI-powered chatbot into
+                                the veteran education website to answer
+                                questions about admissions, benefits,
+                                enrollment, and university resources.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- GITHUB -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                GitHub & Version Control
+                            </span>
+
+                            <span class="nav-description">
+
+                                Use Git and GitHub to manage source code,
+                                track changes, push updates, and deploy
+                                web projects.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </section>
+
+
+            <!-- ==============================
+                 SYSTEMS ANALYSIS
+            =============================== -->
+
+            <section class="navigation-section">
+
+                <h2>Systems Analysis & Design</h2>
+
+
+                <ul class="portfolio-grid">
+
+
+                    <!-- CLIENT SYSTEM -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Client Outreach & Engagement System
+                            </span>
+
+                            <span class="nav-description">
+
+                                Developing a proposed information system
+                                designed to improve client outreach,
+                                marketing activities, lead management,
+                                and engagement tracking.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- DFD -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Data Flow Diagrams
+                            </span>
+
+                            <span class="nav-description">
+
+                                Developed context, Level 0, Level 1,
+                                and Level 2 Data Flow Diagrams to model
+                                how information moves through a
+                                proposed system.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- REQUIREMENTS -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Requirements Gathering
+                            </span>
+
+                            <span class="nav-description">
+
+                                Collected and documented information
+                                from client meetings to identify current
+                                processes, problems, requirements,
+                                and possible improvements.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </section>
+
+
+            <!-- ==============================
+                 DATABASE / PROGRAMMING
+            =============================== -->
+
+            <section class="navigation-section">
+
+                <h2>Programming & Database Projects</h2>
+
+
+                <ul class="portfolio-grid">
+
+
+                    <!-- PYTHON -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Python Development
+                            </span>
+
+                            <span class="nav-description">
+
+                                Developed Python programs involving
+                                functions, loops, conditional logic,
+                                lists, calculations, input validation,
+                                and data processing.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SQL -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                SQL Query Development
+                            </span>
+
+                            <span class="nav-description">
+
+                                Created SQL queries using joins,
+                                aggregate functions, GROUP BY,
+                                subqueries, UNION, INTERSECT,
+                                filtering, and sorting.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- DATABASE -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-title">
+                                Relational Databases
+                            </span>
+
+                            <span class="nav-description">
+
+                                Worked with relational database
+                                structures, relationships, queries,
+                                tables, forms, and data management
+                                using SQL and Microsoft Access.
+
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </section>
+
+
+            <!-- ==============================
+                 TECHNOLOGIES
+            =============================== -->
+
+            <section class="intro">
+
+                <h2>Technologies Used</h2>
+
+                <p>
+                    Linux • Raspberry Pi • Python • Flask • Bash •
+                    HTML • CSS • JavaScript • Git • GitHub •
+                    Cloudflare • DNS • SSH • REST APIs •
+                    Prometheus • Grafana • Node Exporter •
+                    SQL • Microsoft Access • Microsoft Azure
+                </p>
+
+            </section>
+
+
+            <!-- ==============================
+                 NAVIGATION
+            =============================== -->
+
+            <section class="contact">
+
+                <h2>Explore My Portfolio</h2>
+
+                <p>
+                    View more about my education, technical skills,
+                    certifications, and professional experience.
+                </p>
+
+
+                <div class="contact-buttons">
+
+                    <a href="index.html" class="button">
+                        Home
+                    </a>
+
+                    <a href="skills.html" class="button">
+                        Knowledge & Skills
+                    </a>
+
+                    <a href="education.html" class="button">
+                        Education
+                    </a>
+
+                    <a href="workexperience.html" class="button">
+                        Work Experience
+                    </a>
+
+                    <a href="certifications.html" class="button">
+                        Certifications
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+        <!-- ==============================
+             FOOTER
+        =============================== -->
+
+        <footer>
+
+            <p>
+                &copy; 2026 Frank Nativi. All Rights Reserved.
+            </p>
+
+        </footer>
+
+
+    </div>
+
+
+    <!-- ==============================
+         RASPBERRY PI BACKEND CHECK
+    =============================== -->
+
     <script>
-  const API_BASE = "https://api.franknati.com";
 
-  document.getElementById("btn").addEventListener("click", async () => {
-    const out = document.getElementById("out");
+        const API_BASE = "https://api.franknati.com";
 
-    try {
-      const res = await fetch(`${API_BASE}/api/health`);
-      const data = await res.json();
 
-      if (data.ok === true) {
-        out.textContent = "🚀 Backend is Up and Running";
-      } else {
-        out.textContent = "⚠️ Backend not responding properly";
-      }
+        document
+            .getElementById("btn")
+            .addEventListener("click", async () => {
 
-    } catch (err) {
-      out.textContent = "❌ Could not reach Backend";
-    }
-  });
-</script>
+
+                const out =
+                    document.getElementById("out");
+
+
+                out.textContent =
+                    "Checking backend...";
+
+
+                try {
+
+                    const res =
+                        await fetch(
+                            `${API_BASE}/api/health`
+                        );
+
+
+                    const data =
+                        await res.json();
+
+
+                    if (data.ok === true) {
+
+                        out.textContent =
+                            "🚀 Backend is Up and Running";
+
+                    }
+
+                    else {
+
+                        out.textContent =
+                            "⚠️ Backend is responding, but the health check returned an unexpected response.";
+
+                    }
+
+
+                }
+
+                catch (err) {
+
+                    out.textContent =
+                        "❌ Could not reach Backend";
+
+                }
+
+
+            });
+
+    </script>
+
+
 </body>
+
 </html>
